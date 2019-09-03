@@ -2,19 +2,19 @@
 //  ViewController.swift
 //  CinqSkillTest
 //
-//  Created by Flavio Telles Paschoal Santos on 30/08/19.
+//  Created by Elvis on 30/08/19.
 //  Copyright © 2019 POCS. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class LoginController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    
 }
 

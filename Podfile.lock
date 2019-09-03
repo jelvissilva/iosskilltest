@@ -1,0 +1,41 @@
+PODS:
+  - Alamofire (5.0.0-beta.7)
+  - MaterialComponents/Elevation (88.1.0):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/NavigationDrawer (88.1.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/private/UIMetrics
+    - MaterialComponents/ShadowLayer
+  - MaterialComponents/Palettes (88.1.0)
+  - MaterialComponents/private/Application (88.1.0)
+  - MaterialComponents/private/Color (88.1.0)
+  - MaterialComponents/private/Math (88.1.0)
+  - MaterialComponents/private/UIMetrics (88.1.0):
+    - MaterialComponents/private/Application
+  - MaterialComponents/ShadowElevations (88.1.0)
+  - MaterialComponents/ShadowLayer (88.1.0):
+    - MaterialComponents/ShadowElevations
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0.0-beta.5)
+  - MaterialComponents/NavigationDrawer
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - MaterialComponents
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: bd07938ceecad59d2492aeecb1f785a8f2721160
+  MaterialComponents: 54dfcfccc45439a158f9d3ad8bc0e39972f91db4
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: 362d04b9dd97563d89b02fe4ba0dc322bd35ce70
+
+COCOAPODS: 1.7.5
