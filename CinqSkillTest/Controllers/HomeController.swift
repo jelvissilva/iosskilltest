@@ -12,7 +12,8 @@ import MaterialComponents.MaterialNavigationDrawer
 fileprivate var hamburgerMenu = UIHamburgerMenuViewController.initializerMenu()
 
 
-class HomeController: UIViewController, UIHamburgerMenuControlDelegate {
+class HomeController: UIViewController, UIHamburgerMenuControlDelegate, HomeContentDelegate {
+ 
 
     
    // static let sharedInstance = BPFControlFlow()
@@ -43,11 +44,11 @@ class HomeController: UIViewController, UIHamburgerMenuControlDelegate {
         DispatchQueue.main.async {
             
             var menuItems = [UIMenuItem]()
+        
 //
-            let titleInicio = "Inicio"
-            let titleTeste1 = "TESTE 1"
-            let titleTeste2 = "TESTE 2"
-            let titleTeste3 = "TESTE 3"
+            let titleHome = "Home"
+            let titleListaAlbum = "Lista de Albums"
+            let titleSair = "Sair"
             
 //            NSAttributedString.menuItem(titleInicio)
 //            var attributedString = NSAttributedString(string: "")
@@ -61,20 +62,17 @@ class HomeController: UIViewController, UIHamburgerMenuControlDelegate {
             
             
             var attributedString = NSAttributedString(string: "")
-            var menuItemHome = UIMenuItem(itemId: "home", title: titleInicio, image: "", imagePressed: "",  action: "inicioAction")
+            var menuItemHome = UIMenuItem(itemId: "inicio", title: titleHome, image: "", imagePressed: "",  action: "inicioAction")
             
-            var menuItemTeste1 = UIMenuItem(itemId: "teste1", title: titleTeste1, image: "", imagePressed: "",  action: "1")
+            var menuItemListaAlbum = UIMenuItem(itemId: "listaAlbum", title: titleListaAlbum, image: "", imagePressed: "",  action: "1")
             
-            var menuItemTeste2 = UIMenuItem(itemId: "teste2", title: titleTeste2, image: "", imagePressed: "",  action: "2")
-            
-            var menuItemTeste3 = UIMenuItem(itemId: "teste3", title: titleTeste3, image: "", imagePressed: "",  action: "3")
+            var menuItemSair = UIMenuItem(itemId: "sair", title: titleSair, image: "", imagePressed: "",  action: "2")
             
             
             menuItems.append(menuItemHome)
-            menuItems.append(menuItemTeste1)
-            menuItems.append(menuItemTeste2)
-            menuItems.append(menuItemTeste3)
-            
+            menuItems.append(menuItemListaAlbum)
+            menuItems.append(menuItemSair)
+        
             hamburgerMenu.populateMenu(menuItems: menuItems)
 
         }
@@ -125,10 +123,19 @@ class HomeController: UIViewController, UIHamburgerMenuControlDelegate {
         let storyboard = UIStoryboard(name: storyName, bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: viewName)
         
-        rootViewController(viewController)
+        
+        let viewHomeContentController:HomeContentController = viewController as! HomeContentController
+        viewHomeContentController.delegate = self
+        
+        rootViewController(viewHomeContentController)
         
         
     }
+    
+    func onMenuToggle() {
+        hamburgerMenu.toogleMenu()
+    }
+    
     
     func rootViewController(_ viewController: UIViewController) {
        

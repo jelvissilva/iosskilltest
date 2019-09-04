@@ -41,6 +41,9 @@
 		CAC3D0CC231D894600D411DD /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC3D0CB231D894600D411DD /* UIColorExtension.swift */; };
 		CAC3D0CE231ED35500D411DD /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC3D0CD231ED35500D411DD /* Home.storyboard */; };
 		CAC3D0D0231ED5AA00D411DD /* HomeContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC3D0CF231ED5AA00D411DD /* HomeContentController.swift */; };
+		CAC3D0D2231FFFE500D411DD /* UIUsuarioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC3D0D1231FFFE500D411DD /* UIUsuarioCell.swift */; };
+		CAC3D0D4232000E800D411DD /* UIUsuarioItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC3D0D3232000E800D411DD /* UIUsuarioItem.swift */; };
+		CAC3D0D82320296F00D411DD /* HomeContentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC3D0D72320296F00D411DD /* HomeContentDelegate.swift */; };
 		FBE31C03F4D2FA458854E441 /* Pods_CinqSkillTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C35C68E931A64547E82387C /* Pods_CinqSkillTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +87,9 @@
 		CAC3D0CB231D894600D411DD /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		CAC3D0CD231ED35500D411DD /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		CAC3D0CF231ED5AA00D411DD /* HomeContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentController.swift; sourceTree = "<group>"; };
+		CAC3D0D1231FFFE500D411DD /* UIUsuarioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUsuarioCell.swift; sourceTree = "<group>"; };
+		CAC3D0D3232000E800D411DD /* UIUsuarioItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUsuarioItem.swift; sourceTree = "<group>"; };
+		CAC3D0D72320296F00D411DD /* HomeContentDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +178,7 @@
 			children = (
 				CAC3D0832319C1C400D411DD /* MenuItem.swift */,
 				CAC3D0852319C2C400D411DD /* MenuItemTest.xib */,
+				CAC3D0D1231FFFE500D411DD /* UIUsuarioCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,6 +186,7 @@
 		CA03BC122319AD4B00753C79 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CAC3D0D3232000E800D411DD /* UIUsuarioItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,6 +197,7 @@
 				CA03BBFC2319A8AB00753C79 /* HomeController.swift */,
 				CAC3D0812319B96200D411DD /* LoginController.swift */,
 				CAC3D0CF231ED5AA00D411DD /* HomeContentController.swift */,
+				CAC3D0D72320296F00D411DD /* HomeContentDelegate.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -451,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAC3D096231D4D8700D411DD /* UIHamburgerMenuView.swift in Sources */,
+				CAC3D0D4232000E800D411DD /* UIUsuarioItem.swift in Sources */,
 				CAC3D0AA231D4E6100D411DD /* UIMenuNavigationController.swift in Sources */,
 				CAC3D0A7231D4E5500D411DD /* UIHamburgerMenuControlDelegate.swift in Sources */,
 				CA03BBFD2319A8AB00753C79 /* HomeController.swift in Sources */,
@@ -462,7 +472,9 @@
 				CAC3D0D0231ED5AA00D411DD /* HomeContentController.swift in Sources */,
 				CAC3D0842319C1C400D411DD /* MenuItem.swift in Sources */,
 				CAC3D0B8231D617F00D411DD /* UITypeAlias.swift in Sources */,
+				CAC3D0D2231FFFE500D411DD /* UIUsuarioCell.swift in Sources */,
 				CAC3D0BE231D87BD00D411DD /* UIFontExtension.swift in Sources */,
+				CAC3D0D82320296F00D411DD /* HomeContentDelegate.swift in Sources */,
 				CAC3D0B6231D60ED00D411DD /* TypeAlias.swift in Sources */,
 				CAC3D098231D4D8700D411DD /* UIMenuViewCell.swift in Sources */,
 				CA03BC032319A8AB00753C79 /* CinqSkillTest.xcdatamodeld in Sources */,
